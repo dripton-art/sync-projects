@@ -1,11 +1,11 @@
 # Enter your name and age
-name = input("/n Enter your Name: ")
-age = int(input("/n Enter your age: "))
+name = input("\n Enter your Name: ")
+age = int(input("\n Enter your age: "))
 
 # Enter your favourite food and color.
-food = input("/n What is your favourite food?: ")
-colour = input("/n What is your favourite colour?: ")
-Height = int(input("/n How tall are u?: "))
+food = input("\n What is your favourite food?: ")
+colour = input("\n What is your favourite colour?: ")
+Height = int(input("\n How tall are u?: "))
 
 
 
