@@ -9,7 +9,7 @@ Height = (input("\n How tall are u?: "))
 
 
 
-print(f"Hello, my name is {name} and I am {age} years old.")
+print(f"\n Hello, my name is {name} and I am {age} years old.")
 print(f"My favourite food is {food}")
 print(f"My favourite colour is {colour}")
-
+print(f"I am {Height} feet tall")
