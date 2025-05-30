@@ -5,7 +5,7 @@ age = int(input("\n Enter your age: "))
 # Enter your favourite food and color.
 food = input("\n What is your favourite food?: ")
 colour = input("\n What is your favourite colour?: ")
-Height = int(input("\n How tall are u?: "))
+Height = (input("\n How tall are u?: "))
 
 
 
