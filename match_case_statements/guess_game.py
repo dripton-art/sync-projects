@@ -3,12 +3,10 @@ import random # So we can pick a secret number.
 play = "yes"
 
 while play == "yes":
-    secret_number = random.randint(1, 11)
-    guess = None # Just to start the loop.
-
+    secret_number = random.randint(1, 11) 
 
     print("Guess a number between 1 and 11")
-    guess = int(input("enter any number: \n"))
+    guess = int(input("enter any number: "))
 
 match guess:
   case _ if guess == secret_number:
@@ -22,6 +20,6 @@ match guess:
 play = input("Do you want to play again? (yes or no): ").lower()
 
 if play == "yes":
-    print("Lets play again!")
+    print("\n Starting a new game...\n")
 else:
     print("Thank you for playing!")
