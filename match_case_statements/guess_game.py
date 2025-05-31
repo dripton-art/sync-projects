@@ -5,13 +5,13 @@ play = "yes"
 while play == "yes":
     secret_number = random.randint(1, 11)
 
-    print("\n I'm thinking of a number between 1 and 11") 
+    print("\n I'm thinking of a number between 1 and 11. Can u guess it?") 
 
     guess = None # Start with no guess.
 
     # Loop until correct guess.
     while guess != secret_number:
-        guess = int(input("\n enter any number: "))
+        guess = int(input("enter number: "))
 
         match guess:
             case _ if guess == secret_number:
