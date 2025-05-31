@@ -17,9 +17,9 @@ while play == "yes":
             print("\n Nope, your guess is a bit low. Give it another shot!")
 
     # Ask if the user wants to play again.
-    play = input("Do you want to play again? (yes or no): ").lower()
+    play = input("\n Do you want to play again? (yes or no): ").lower()
 
     if play == "yes":
         print("\n Starting a new game...\n")
     else:
-        print("\n Thank you for playing!!!!\n")
+        print("\n ***Thank you for playing***\n")
