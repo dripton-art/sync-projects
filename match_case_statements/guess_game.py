@@ -5,9 +5,10 @@ play = "yes"
 while play == "yes":
     secret_number = random.randint(1, 11)
     guess = None # Just to start the loop.
-    
-print("Guess a number between 1 and 11")
-guess = int(input("enter any number: "))
+
+
+    print("Guess a number between 1 and 11")
+    guess = int(input("enter any number: \n"))
 
 match guess:
   case _ if guess == secret_number:
