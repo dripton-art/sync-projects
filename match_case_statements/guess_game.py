@@ -5,21 +5,21 @@ play = "yes"
 while play == "yes":
     secret_number = random.randint(1, 11)
 
-    print("I'm thinking of a number between 1 and 11") 
+    print("\n I'm thinking of a number between 1 and 11") 
 
     guess = None # Start with no guess.
 
     # Loop until correct guess.
     while guess != secret_number:
-        guess = int(input("enter any number: "))
+        guess = int(input("\n enter any number: "))
 
-    match guess:
-        case _ if guess == secret_number:
-            print("\n Congratulations, you guessed!")
-        case _ if guess > secret_number:
-            print("\n Oops, your guess is a bit high. Try again!")
-        case _ if guess < secret_number:
-            print("\n Nope, your guess is a bit low. Give it another shot!")
+        match guess:
+            case _ if guess == secret_number:
+                print("\n Congratulations, you guessed!")
+            case _ if guess > secret_number:
+                print("\n Oops, your guess is a bit high. Try again!")
+            case _ if guess < secret_number:
+                print("\n Nope, your guess is a bit low. Give it another shot!")
 
     # Ask if the user wants to play again.
     play = input("\n Do you want to play again? (yes or no): ").lower()
