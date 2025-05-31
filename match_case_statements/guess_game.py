@@ -8,18 +8,18 @@ while play == "yes":
     print("Guess a number between 1 and 11")
     guess = int(input("enter any number: "))
 
-match guess:
-  case _ if guess == secret_number:
-    print("Congratulations, you guessed!")
-  case _ if guess > secret_number:
-    print("Oops, your guess is a bit high. Try again!")
-  case _ if guess < secret_number:
-    print("Nope, your guess is a bit low. Give it another shot!")
+    match guess:
+        case _ if guess == secret_number:
+            print("Congratulations, you guessed!")
+        case _ if guess > secret_number:
+            print("Oops, your guess is a bit high. Try again!")
+        case _ if guess < secret_number:
+            print("Nope, your guess is a bit low. Give it another shot!")
 
-# Ask if the user wants to play again.
-play = input("Do you want to play again? (yes or no): ").lower()
+    # Ask if the user wants to play again.
+    play = input("Do you want to play again? (yes or no): ").lower()
 
-if play == "yes":
-    print("\n Starting a new game...\n")
-else:
-    print("Thank you for playing!")
+    if play == "yes":
+        print("\n Starting a new game...\n")
+    else:
+        print("Thank you for playing!")
